@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "frictionless-dataframe"
+version = "0.1.0"
+description = ""
+authors = ["mackilinen <markus.eriksson.88@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+frictionless = "^5.15.10"
+polars = "^0.18.15"
+pandas = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.286"
+mypy = "^1.5.1"
+black = "^23.7.0"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# mypy global options:
+# https://mypy.readthedocs.io/en/stable/existing_code.html#getting-to-strict
+[tool.mypy]
+strict = true
