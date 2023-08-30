@@ -12,9 +12,10 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "charliermarsh.ruff",
                 "ms-python.black-formatter",
                 "ms-python.mypy-type-checker",
-                "charliermarsh.ruff"
+                "tamasfe.even-better-toml"
             ]
         }
     }
