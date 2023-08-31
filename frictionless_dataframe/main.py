@@ -21,6 +21,8 @@ def frictionless_to_polars(bytes: bytes, columns: Sequence[str]) -> polars.DataF
 
 
 def frictionless_to_pandas(bytes: bytes, columns: Sequence[str]) -> pandas.DataFrame:
+    # keep_default_na=False, na_values=[""], sep=",", decimal="."
+    # engine="pyarrow"
     return pandas.read_csv(BytesIO(bytes), usecols=columns)
 
 
